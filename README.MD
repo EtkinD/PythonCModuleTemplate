@@ -2,6 +2,16 @@
 
 This is a template for a Python C module. It is a simple example that shows how to create a Python module in C and C++.
 
+## Features
+
+- Python C/C++ module
+- Python module tests
+- `setup.py` for building and installing the module
+- `pycmtemplate` command line script for running the module in anywhere
+- `pycmtemplate` Python module for importing the module
+- `init.sh` for initializing the project
+- `clean.sh` for cleaning up the project
+
 ## How to use
 
 1. Clone the repository
