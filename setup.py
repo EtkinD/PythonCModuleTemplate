@@ -23,4 +23,10 @@ setup(
         # Required for .pyi files to be included in the package
         "pycmtemplate": ["py.typed"],
     },
+    entry_points={
+        # Provide a console script entry point. After pip install run `pycmtemplate` on the command line
+        "console_scripts": [
+            "pycmtemplate = pycmtemplate.__main__:main",
+        ],
+    },
 )
