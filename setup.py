@@ -1,4 +1,4 @@
-from setuptools import setup, Extension
+from setuptools import setup, Extension, find_packages
 
 # C/C++ extension module configuration
 module = Extension(
@@ -15,6 +15,12 @@ setup(
     long_description="Python C/C++ template project",
     author="Etkin Dogan",
     author_email="etkindogan@gmail.com",
+    packages=find_packages(),
+    install_requires=[],
     python_requires=">=3.8",
     ext_modules=[module],
+    package_data={
+        # Required for .pyi files to be included in the package
+        "pycmtemplate": ["py.typed"],
+    },
 )
